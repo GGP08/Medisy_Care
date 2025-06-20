@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Medisy Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark-blue: #174978;
+      --mid-blue: #2F5F8A;
+      --light-blue: #46769B;
+      --white: #ffffff;
+      --offwhite: #f0f4f8;
+    }
+
+    body {
+      background-color: var(--dark-blue);
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--offwhite);
+    }
+
+    .blog-header {
+      background: linear-gradient(90deg, var(--light-blue), var(--mid-blue));
+      padding: 80px 20px 60px;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .blog-header h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .blog-header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .blog-container {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .blog-card {
+      background-color: var(--mid-blue);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    p, li {
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .related-reads {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: var(--light-blue);
+      border-radius: 12px;
+      color: var(--white);
+    }
+
+    .related-reads h4 {
+      margin-bottom: 20px;
+    }
+
+    .related-reads ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .related-reads li {
+      margin-bottom: 12px;
+    }
+
+    .related-reads a {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .related-reads a:hover {
+      color: #e2e2e2;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 576px) {
+      .blog-card {
+        padding: 25px;
+      }
+      .blog-header h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="blog-header">
+    <h1>Medisy Blog</h1>
+    <p>Insights into AI-powered Health, Innovation & Well-being</p>
+  </header>
+
+  <section class="blog-container">
+    <div class="blog-card">
+      <h2 class="mb-4">Building a Symptom-Based Disease Diagnosis Web App with Flask and Machine Learning</h2>
+
+      <p>In the age of technology and information, access to accurate and timely healthcare is more critical than ever. With the increasing importance of remote healthcare solutions, we embarked on a journey to develop a symptom-based disease diagnosis web application. Leveraging Flask for the backend and a Decision Tree Classifier model, we created a user-friendly platform that can help users identify potential illnesses based on their reported symptoms.</p>
+
+      <h3>The Problem</h3>
+      <p>We noticed a common issue: people often experience symptoms and want quick answers. Differentiating diseases can be confusing when symptoms overlap. Our solution? A system that takes symptoms and intelligently predicts diseases.</p>
+
+      <h3>The Solution</h3>
+      <p>We built a web app where users input symptoms, and our trained model gives back likely diseases. Here’s how:</p>
+      <ol>
+        <li><strong>Symptom Input:</strong> A user-friendly form where users can choose from a wide range of symptoms.</li>
+        <li><strong>Machine Learning Model:</strong> A Decision Tree Classifier trained on curated datasets of symptoms and diseases.</li>
+        <li><strong>Prediction:</strong> The app quickly predicts the most likely disease using the model.</li>
+        <li><strong>Extra Information:</strong> The app shows description, precautions, medicines, diet, and workout tips related to the disease.</li>
+      </ol>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>User-Friendly Interface:</strong> Clean design and intuitive symptom input system.</li>
+        <li><strong>Accurate Predictions:</strong> Trained machine learning model for reliable results.</li>
+        <li><strong>Comprehensive Guidance:</strong> Full insights into the disease—medicine, diet, precautions, and fitness.</li>
+        <li><strong>Educational Content:</strong> Health blogs and guides for user empowerment and awareness.</li>
+      </ul>
+
+      <h3>Conclusion</h3>
+      <p>Our Symptom-Based Disease Diagnosis Web App merges machine learning with health insights. It empowers users to understand their health in minutes and fosters awareness. We hope this innovation contributes to better well-being and broader healthcare accessibility in today’s digital-first world.</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

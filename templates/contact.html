@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Medisy Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --primary-dark: #174978;
+        --primary-mid: #2F5F8A;
+        --primary-light: #46769B;
+        --text-white: #ffffff;
+        --text-offwhite: #f1f1f1;
+      }
+
+      body {
+        background-color: var(--primary-dark);
+        color: var(--text-white);
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--text-white);
+      }
+
+      .contact-card {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        background-color: var(--primary-mid);
+        color: var(--text-offwhite);
+      }
+
+      .contact-card h4 {
+        color: var(--text-white);
+      }
+
+      .form-label {
+        color: var(--text-white);
+      }
+
+      .form-control {
+        background-color: var(--primary-light);
+        border: none;
+        color: var(--text-white);
+      }
+
+      .form-control::placeholder {
+        color: #e0e0e0;
+      }
+
+      .form-control:focus {
+        background-color: var(--primary-light);
+        color: var(--text-white);
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+      }
+
+      .btn-primary {
+        background-color: var(--primary-light);
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--text-white);
+        color: var(--primary-dark);
+      }
+
+      footer {
+        background-color: #003366;
+        color: var(--text-white);
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: var(--text-white);
+        text-decoration: underline;
+      }
+
+      footer a:hover {
+        color: var(--primary-light);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container my-5">
+      <h2 class="section-title">Contact Us</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 contact-card">
+          <h4>Customer Support</h4>
+          <p>Have questions or need assistance? Our dedicated team is here to help you with any technical issues, feedback, or general inquiries.</p>
+
+          <h4 class="mt-4">Get in Touch</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background: #174978">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p><strong>Email:</strong> medisycare@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9xxxxxxxxx</p>
+        <p><strong>Location:</strong> Hyderabad,India</p>
+        <p>
+          <strong>Follow us:</strong>
+          <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </p>
+        <p class="mb-0">&copy; 2025 Medisy Care. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

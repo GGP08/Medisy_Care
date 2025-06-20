@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer - Medisy Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --dark-blue: #174978;
+        --mid-blue: #2F5F8A;
+        --light-blue: #46769B;
+        --white: #ffffff;
+        --offwhite: #f0f4f8;
+      }
+
+      body {
+        background-color: var(--dark-blue);
+        color: var(--offwhite);
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      .developer-section {
+        padding: 80px 15px;
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      .developer-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--white);
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .developer-heading::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        margin: 12px auto 0;
+        background: linear-gradient(90deg, var(--light-blue), var(--mid-blue));
+        border-radius: 5px;
+      }
+
+      .developer-content {
+        max-width: 920px;
+        margin: auto;
+        background-color: var(--mid-blue);
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        transition: transform 0.5s, box-shadow 0.5s;
+      }
+
+      .developer-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 45px rgba(0, 0, 0, 0.25);
+      }
+
+      .developer-content p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--offwhite);
+      }
+
+      .developer-content h5 {
+        margin-top: 30px;
+        color: var(--white);
+        font-weight: 600;
+        border-left: 4px solid var(--light-blue);
+        padding-left: 10px;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (max-width: 576px) {
+        .developer-content {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="developer-section">
+      <div class="container">
+        <h2 class="developer-heading">Meet the Developer</h2>
+        <div class="developer-content">
+          <p>Hello, I'm <strong>Gnana Prasanna</strong>, your Computer Science Engineer. My mission is to fuse technology and care into one seamless experience—Medisy Care.</p>
+
+          <h5>Commitment to Innovation</h5>
+          <p>Every feature of this platform is designed with precision—from disease predictions to lifestyle recommendations—all powered by smart algorithms and a user-first approach.</p>
+
+          <h5>Vision for Health Tech</h5>
+          <p>Medisy Care is more than a tool. It’s a step toward accessible, tech-enabled health empowerment. I aim to keep it intuitive, helpful, and always evolving with you in mind.</p>
+
+          <h5>Let’s Grow Together</h5>
+          <p>This journey is just beginning. I invite you to explore the features, share feedback, and be part of shaping the future of personalized healthcare.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
